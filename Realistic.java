@@ -37,12 +37,12 @@ public class Realistic {
          * smallest element. The first loop copies all the elements before the smallest
          * element and the second loop the elements after it.
          */
-        for (int i = 0; i < smallest_index; i++) {
+        for (int i = 0; i < smallest_index; i++) { // This loop copies all elemnts before the smallest element 
             temporary[i] = arr[i];
         }
-        for (int i = smallest_index + 1; i < arr.length; i++) {
-            temporary[i - 1] = arr[i];
-        }
+        for (int i = smallest_index + 1; i < arr.length; i++) { // This loop copies all the elements after the smallest element  
+            temporary[i - 1] = arr[i];                          // It shifts them left one position in "temporary" 
+        }                                                       // Togehter they create a new array that is a copy of arr without the smallest elrmrnt. 
         /*
          * Same result with a while loop
          * 
